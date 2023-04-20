@@ -27,3 +27,18 @@ figure{
     background-color: whitesmoke;
     color: lightgray;
 }
+figure img {
+    width: 100%;
+}
+figcaption {
+    padding-top: 10px;
+}
+.matriz-da-musicdot{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.familia-tupfeln{
+    width: 250px;
+    float:right;
+}
