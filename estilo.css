@@ -8,11 +8,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-h1{
-    color: #3d3d3d;
-    background-color: #E1EDF2;
-}
-h2 {
+
+
+.botom_h2 {
     border-bottom: 2px solid #000;
     }
 figure {
@@ -41,4 +39,9 @@ figcaption {
 .familia-tupfeln{
     width: 250px;
     float:right;
+}
+.titulo{
+    color: #3d3d3d;
+    background-color: #E1EDF2;
+    font-size: 32px;
 }
