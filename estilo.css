@@ -45,3 +45,22 @@ figcaption {
     background-color: #E1EDF2;
     font-size: 32px;
 }
+input{
+    height: 30px;
+    width: 500px;
+    margin: 10px;
+    margin-right: 0px;
+
+}
+textarea{
+    margin: 10px;
+    width: 500px;
+}
+button{
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    background: white;
+    font-weight: bold;
+    border-color: #000;
+}
