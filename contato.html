@@ -14,7 +14,7 @@
         Entre em contato
     </h1>
 
-    <form>
+    <form name="form" action="" onsubmit="return validar()" method="post">
         <div>
             <input type="nome" name="nome" placeholder="..." required> 
             <label for="nome">Nome </label>
@@ -22,7 +22,7 @@
         
 
         <div>
-            <input type="fone" name="fone" placeholder="(xx)xxxxxxxxx " required>
+            <input type="tel" name="fone" placeholder="(xx)xxxxxxxxx " required>
             <label for="fone">Fone</label>
         </div>
 
@@ -39,10 +39,42 @@
 
 
         <div>
-            <button name="enter"button>
-                Enviar </button>
+            <input  type="submit"  class="enviar" name="enter"value="Enviar"/>
         </div>
          
     </form>
+    <script>
+
+        function validar(){
+
+            var valido = document.forms["form"];
+            var nome = form["nome"].value;
+            var telefone = form ["fone"].value;
+            var email = form["e-mail"].value;
+            var opiniao = form["opiniao"].value;
+            var boolEmail = !validateEmail(email);
+
+            if (nome.length == ""|| nome.length < 9){
+                alert(" nome nao informado")
+                return false;
+            }
+            if (telefone.length == ""|| telefone.length == 10  ){
+                alert (" telefone nao informado");
+                return false;
+            }
+            if (boolEmail ){
+                alert (" email nao informado");
+                return false;
+            }
+            if(opiniao.length == ""|| opiniao.length >9 || email.length > 51){
+                return false;
+            }
+            return true;
+        }
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+            }
+    </script>
 </body>
 </html>
